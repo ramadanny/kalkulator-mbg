@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState } from 'react';
 import InputBudget from '../../components/InputBudget/InputBudget';
 import ResultDisplay from '../../components/ResultDisplay/ResultDisplay';
 import { DAILY_SPENDING } from '../../utils/constants';
@@ -6,21 +6,32 @@ import './Calculator.css';
 
 const Calculator = () => {
   const [budget, setBudget] = useState('');
+  const [displayDays, setDisplayDays] = useState(0);
 
-  // useMemo digunakan agar kalkulasi hanya berjalan saat budget berubah
-  const daysResult = useMemo(() => {
-    if (!budget || budget <= 0) return 0;
+  const handleCalculate = () => {
+    if (!budget || budget <= 0) {
+      setDisplayDays(0);
+      return;
+    }
+    
+    // Kalkulasi dilakukan di sini, bukan realtime
     const result = budget / DAILY_SPENDING;
-    return Math.round(result); // Pembulatan ke angka utuh terdekat
-  }, [budget]);
+    setDisplayDays(Math.round(result));
+  };
 
   return (
     <div className="calculator-card">
       <h2>Kalkulator MBG</h2>
       <p>Biaya tetap: 1.2 Triliun / hari</p>
       <hr />
+      
       <InputBudget value={budget} onChange={setBudget} />
-      <ResultDisplay days={daysResult} />
+      
+      <button className="calculate-btn" onClick={handleCalculate}>
+        Hitung Daya Tahan
+      </button>
+
+      <ResultDisplay days={displayDays} />
     </div>
   );
 };

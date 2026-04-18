@@ -1,0 +1,13 @@
+.footer {
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: auto; /* Memastikan footer terdorong ke bawah jika menggunakan flex */
+}
+
+.footer p {
+  font-size: 0.85rem;
+  color: #95a5a6;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
