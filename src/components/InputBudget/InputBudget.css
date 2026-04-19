@@ -6,21 +6,26 @@
 .input-group label {
   display: block;
   font-weight: 600;
-  margin-bottom: 0.5rem;
-  font-size: 0.9rem;
+  margin-bottom: 0.6rem;
+  font-size: 0.85rem;
+  color: var(--text);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .input-group input {
   width: 100%;
-  padding: 12px;
-  border: 2px solid #e0e0e0;
-  border-radius: 8px;
+  padding: 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
   font-size: 1rem;
-  box-sizing: border-box; /* Penting agar padding tidak merusak lebar */
+  background-color: transparent;
+  color: var(--text-h);
+  box-sizing: border-box;
   transition: border-color 0.3s ease;
 }
 
 .input-group input:focus {
   outline: none;
-  border-color: #3498db;
+  border-color: var(--text-h);
 }

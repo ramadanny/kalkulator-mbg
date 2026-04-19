@@ -1,8 +1,9 @@
 .calculator-card {
-  background: #ffffff;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  background: var(--bg);
+  padding: 2.5rem;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
+  border: 1px solid var(--border);
   width: 100%;
   max-width: 400px;
   text-align: center;
@@ -10,36 +11,40 @@
 
 .calculator-card h2 {
   margin-top: 0;
-  color: #2c3e50;
+  color: var(--text-h);
 }
 
 .calculator-card p {
   font-size: 0.9rem;
-  color: #7f8c8d;
+  color: var(--text);
+  opacity: 0.8;
 }
 
 hr {
   border: 0;
-  border-top: 1px solid #eee;
+  border-top: 1px solid var(--border);
   margin: 1.5rem 0;
 }
 
 .calculate-btn {
   width: 100%;
-  padding: 12px;
-  background-color: #3498db;
-  color: white;
+  padding: 14px;
+  background-color: var(--text-h);
+  color: var(--bg);
   border: none;
-  border-radius: 8px;
+  border-radius: var(--radius-md);
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
   margin-bottom: 1.5rem;
-  transition: background-color 0.2s ease;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .calculate-btn:hover {
-  background-color: #2980b9;
+  opacity: 0.85;
+  transform: translateY(-1px);
 }
 
 .calculate-btn:active {

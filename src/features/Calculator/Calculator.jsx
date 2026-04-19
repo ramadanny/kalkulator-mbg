@@ -21,7 +21,7 @@ const Calculator = () => {
 
   return (
     <div className="calculator-card">
-      <h2>Kalkulator MBG</h2>
+      <h2>Calculator MBG</h2>
       <p>Biaya tetap: 1.2 Triliun / hari</p>
       <hr />
       
