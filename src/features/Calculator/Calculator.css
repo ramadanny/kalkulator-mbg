@@ -1,5 +1,5 @@
 .calculator-card {
-  background: var(--bg);
+  background: #ffffff;
   padding: 2.5rem;
   border-radius: var(--radius-lg);
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
@@ -11,13 +11,12 @@
 
 .calculator-card h2 {
   margin-top: 0;
-  color: var(--text-h);
+  color: #000000;
 }
 
 .calculator-card p {
   font-size: 0.9rem;
-  color: var(--text);
-  opacity: 0.8;
+  color: #666666;
 }
 
 hr {
@@ -29,8 +28,8 @@ hr {
 .calculate-btn {
   width: 100%;
   padding: 14px;
-  background-color: var(--text-h);
-  color: var(--bg);
+  background-color: #000000; /* Tombol Hitam */
+  color: #ffffff; /* Teks Putih */
   border: none;
   border-radius: var(--radius-md);
   font-size: 1rem;
@@ -39,11 +38,11 @@ hr {
   margin-bottom: 1.5rem;
   transition: all 0.2s ease;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
 }
 
 .calculate-btn:hover {
-  opacity: 0.85;
+  background-color: #333333;
   transform: translateY(-1px);
 }
 
