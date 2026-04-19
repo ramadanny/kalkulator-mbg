@@ -1,14 +1,21 @@
-# Kalkulator MBG (Budget Sustainability Calculator)
+# Calculator MBG (Makan Bergizi Gratis Budget Calculator)
 
 A clean, modular React application designed to calculate the sustainability of a budget based on a fixed daily expenditure of **1.2 Trillion (1.2T) IDR**.
 
-## 📌 Overview
+## 📌 About The MBG Program
 
-**Kalkulator MBG** is a specialized budgeting tool built with React and Vite. It allows users to input a total budget amount and calculates exactly how many days that budget will last, given a constant burn rate of 1.2T per day. The result is rounded to the nearest whole number for clear, actionable insights.
+**MBG (Makan Bergizi Gratis)** is a flagship national priority program initiated by the President and Vice President of Indonesia, Prabowo Subianto and Gibran Rakabuming Raka. Managed by the **Badan Gizi Nasional (BGN)**, the program officially rolled out nationwide starting in early 2025. 
+
+The program aims to eradicate stunting, improve human resources, and boost local economies by providing free, nutritious meals to:
+- Students across all levels (PAUD, TK, SD, SMP, SMA/equivalent)
+- Toddlers
+- Pregnant women
+- Breastfeeding mothers
+
+This calculator helps estimate how long a given national or regional budget will last under the program's massive daily burn rate.
 
 ## 🚀 Features
 
-- **Non-Realtime Calculation**: Prevents jumping numbers while typing; results only trigger upon clicking the "Hitung" button.
 - **Precision Handling**: Handles large-scale numbers (Trillions) accurately.
 - **Responsive Design**: Minimalist and clean UI that works on both desktop and mobile.
 - **Modular Architecture**: Built using a component-based structure for high maintainability.
@@ -34,7 +41,7 @@ src/
 ## 🛠️ Tech Stack
 
 - **Framework**: [React 18](https://reactjs.org/)
-- **Build Tool**: [Vite](https://vitejs.dev/) (Optimized for fast development)
+- **Build Tool**: [Vite](https://vitejs.dev/)
 - **Language**: JavaScript (ES6+)
 - **Styling**: Vanilla CSS (Scoped per component)
 
@@ -47,29 +54,24 @@ src/
 ### Installation
 
 1. **Clone the repository**
-   ```bash
-   git clone https://github.com/ramadanny/kalkulator-mbg.git
-   cd kalkulator-mbg
-   ```
+```bash
+git clone https://github.com/yourusername/calculator-mbg.git
+cd calculator-mbg
+```
 
 2. **Install dependencies**
-   ```bash
-   npm install
-   ```
+```bash
+npm install
+```
 
 3. **Run development server**
-   ```bash
-   npm run dev
-   ```
-
-4. **Build for production**
-   ```bash
-   npm run build
-   ```
+```bash
+npm run dev
+```
 
 ## ⚙️ How It Works
 
-The core logic resides in the `Calculator.jsx` feature. It utilizes the following formula:
+The core logic resides in the Calculator.jsx feature. It utilizes the following formula:
 
 $$Days = \text{round} \left( \frac{\text{Total Budget}}{1,200,000,000,000} \right)$$
 
@@ -77,7 +79,19 @@ The application ensures that large integer inputs are handled correctly and prov
 
 ## 📄 License
 
-This project is open-source. Feel free to use and modify it.
+This project is licensed under the **Apache License 2.0**. 
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
 
 ---
 **© 2026 Made With Love by ramadanny**
