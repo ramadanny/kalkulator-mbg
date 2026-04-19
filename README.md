@@ -55,7 +55,7 @@ src/
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/yourusername/calculator-mbg.git
+git clone https://github.com/ramadanny/calculator-mbg.git
 cd calculator-mbg
 ```
 
