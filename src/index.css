@@ -1,5 +1,4 @@
 :root {
-  /* Warna Tema: Hitam & Putih */
   --text: #1a1a1a;
   --text-h: #000000;
   --bg: #ffffff;
@@ -9,7 +8,6 @@
   --accent-bg: #f9f9f9;
   --accent-border: #eeeeee;
   
-  /* Pengaturan Sudut (Rounded) */
   --radius-lg: 24px;
   --radius-md: 12px;
   --radius-sm: 8px;

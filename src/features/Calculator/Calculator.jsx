@@ -14,7 +14,6 @@ const Calculator = () => {
       return;
     }
     
-    // Kalkulasi dilakukan di sini, bukan realtime
     const result = budget / DAILY_SPENDING;
     setDisplayDays(Math.round(result));
   };
